@@ -1,0 +1,40 @@
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+/*Text*/
+.text-center{
+    text-align: center;
+}
+
+/*Padding*/
+.p-3{
+padding: 30px;
+}
+
+.p-4{
+padding: 40px;
+}
+
+.py-3{
+    padding: 30px 0;
+}
+

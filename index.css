@@ -1,0 +1,139 @@
+@import url('animation.css');
+
+:root{
+    --primary-color:#272727;
+    --secondary-color:#747474;
+    --light-color:#ffffff;
+    --orange-color:#f9e5c7;
+    --orange-dark-color:#FFBD59;
+    --yellow-color:#FFE400;
+    --green-color:#14A76C;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  *{
+    margin: 0px;
+    padding:0;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    Font-Family: 'Quattrocento', Serif;
+    Font-Size: 20px;
+    color:white;
+    line-height: 1.6;
+    background-color:black;   
+    background-image: url("assets/images/background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+ul{
+    list-style-type:none;
+    padding: 0 20px;
+}
+
+li{
+    padding: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+i{
+    color: white;
+    /*font-size: 50px;*/
+    cursor: pointer;
+}
+
+img,video{
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3{
+    line-height:1.2;
+}
+
+
+p{
+    font-weight: 500;
+}
+
+i{
+    color:white;
+    /*font-size: 50px;*/
+    cursor: pointer;
+}
+
+/*Navigation*/
+.navigation{
+    height: 80px;
+}
+
+.navigation .navbar{
+    justify-content: space-between;
+}
+
+.navigation .logo{
+    padding: 20px;
+
+}
+
+.navigation .links{
+    flex-basis:70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Section*/
+.section{
+ height: 90vh;
+}
+
+.section .container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 1400px;
+}
+
+.section .container .first-box{
+    height: 45%;
+    flex-basis: 350px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+
+.section .container .first-box .motto{
+    animation: slideInFromLeft 0.8s ease-in ;
+}
+
+.section .container .second-box{
+    height: 100%;
+    flex-basis: 350px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color:rgba(0,0,0,0.5);
+    animation: slideInFromBottom 0.8s ease-in;
+}
+
+
+.section .container .second-box .element{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
